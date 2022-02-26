@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+  <swiper class="banner" indicator-dots indicator-color="rgba(255,255,255,0.5)" indicator-active-color="#fff" autoplay interval="3500" circular>
+    <swiper-item>
+      <image src="/img/banner1.jpg"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/banner2.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/banner3.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/img/banner4.png"></image>
+    </swiper-item>
+  </swiper>
+  <van-search  shape="round" value="{{ value }}" placeholder="请输入搜索关键词" />
+</view>

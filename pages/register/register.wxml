@@ -1,0 +1,18 @@
+<view class="header">
+    <image src="/img/logo.png"></image>
+    <text style="font-weight:bold;font-size:40rpx">欢迎登录</text>
+    <text>学生考勤小程序</text>
+</view>
+<view class="bodyer">
+    <view class="phone">
+        <text>学号</text>
+        <input model:value="{{studentId}}" placeholder="请输入学号"></input>
+    </view>
+    <view class="phone">
+        <text>密码</text>
+        <input model:value="{{passWord}}" placeholder="请输入密码"></input>
+    </view>
+</view>
+<view class="footer">
+    <button type="primary" bindtap="login">登录</button>
+</view>
