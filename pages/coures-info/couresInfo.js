@@ -1,4 +1,4 @@
-// pages/information/information.js
+// pages/coures-info/couresInfo.js
 Page({
 
     /**
@@ -62,10 +62,5 @@ Page({
      */
     onShareAppMessage: function () {
 
-    },
-    goCourseInfo(){
-        wx.navigateTo({
-          url: '../course/course',
-        })
     }
 })

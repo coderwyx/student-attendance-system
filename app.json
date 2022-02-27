@@ -3,7 +3,9 @@
         "pages/index/index",
         "pages/logs/logs",
         "pages/information/information",
-        "pages/register/register"
+        "pages/register/register",
+        "pages/course/course",
+        "pages/coures-info/couresInfo"
     ],
     "window": {
         "backgroundTextStyle": "light",
@@ -16,7 +18,7 @@
         "list": [
             {
                 "pagePath": "pages/index/index",
-                "text": "首页"
+                "text": "课程"
             },
             {
                 "pagePath": "pages/information/information",
@@ -26,6 +28,9 @@
     },
     "sitemapLocation": "sitemap.json",
     "usingComponents": {
-      "van-search": "@vant/weapp/search/index"
+        "van-search": "@vant/weapp/search/index",
+        "van-tab": "@vant/weapp/tab/index",
+        "van-tabs": "@vant/weapp/tabs/index",
+        "course-list": "/component/course-list/courseList"
     }
 }

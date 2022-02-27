@@ -1,2 +1,32 @@
 <!--pages/information/information.wxml-->
-<text>pages/information/information.wxml</text>
+<view class="user-info">
+  <view class="info">
+    <image bindtap="{{userInfo?'goInfo':null}}" class="user-img" src="/img/defaultImg.png"></image>
+    <text class="user-name">王小宇</text>
+    <text class="user-class">17级 科学与技术9班</text>
+  </view>
+
+  <view class="attendance-info">
+    <view class="money-bar-item">
+      <text>{{userInfo?(moneyData.money):'--'}}</text>
+      <text>已打卡</text>
+    </view>
+    <view class="money-bar-item">
+      <text>{{userInfo?(moneyData.coupons):'--'}}</text>
+      <text>迟到</text>
+    </view>
+    <view class="money-bar-item">
+      <text>{{userInfo?(moneyData.integral):'--'}}</text>
+      <text>旷课</text>
+    </view>
+  </view>
+
+
+
+  <view bindtap="goCourseInfo" class="course-bar">
+    <view>我的课程</view>
+    <view class="iconfont icon-xiangyou1"></view>
+  </view>
+
+
+</view>

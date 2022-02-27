@@ -15,4 +15,5 @@
     </swiper-item>
   </swiper>
   <van-search  shape="round" value="{{ value }}" placeholder="请输入搜索关键词" />
+  <course-list></course-list>
 </view>

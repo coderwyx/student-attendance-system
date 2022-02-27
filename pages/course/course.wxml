@@ -1,0 +1,6 @@
+<van-tabs active="{{ active }}" bind:change="onChange">
+  <van-tab title="待上课">
+    <course-list></course-list>
+  </van-tab>
+  <van-tab title="已完成">内容 2</van-tab>
+</van-tabs>

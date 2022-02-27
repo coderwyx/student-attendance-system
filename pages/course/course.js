@@ -1,11 +1,11 @@
-// pages/information/information.js
+// pages/course/course.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-
+        active: 0,
     },
 
     /**
@@ -63,9 +63,7 @@ Page({
     onShareAppMessage: function () {
 
     },
-    goCourseInfo(){
-        wx.navigateTo({
-          url: '../course/course',
-        })
-    }
+    onChange(event) {
+       
+      },
 })

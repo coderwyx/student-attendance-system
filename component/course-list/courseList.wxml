@@ -1,0 +1,15 @@
+<!--component/course-list/courseList.wxml-->
+<view>
+    <view class="course-item" bindtap="toCouresInfo">
+        <view class="course-name">
+            {{dataList[0].courseName}}
+        </view>
+        <view class="class-info">
+            <text>{{dataList[0].class}}</text>
+            <view style="display: flex;">
+                <text class="teacher-name">{{dataList[0].teacher}}</text>
+                <image class="teacher-img" src="/img/defaultImg.png"></image>
+            </view>
+        </view>
+    </view>
+</view>

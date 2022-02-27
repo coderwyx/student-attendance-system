@@ -1,1 +1,88 @@
-/* pages/information/information.wxss */
+page {
+    background-color: #f2f3f5;
+  }
+  
+  .user-info {
+    width: 100%;
+    /* height: 485rpx; */
+    overflow: hidden;
+    margin-bottom: 0rpx;
+    padding-bottom: 0rpx;
+  }
+  
+  .info {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    height: 760rpx;
+    background-color: #403737;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  
+  .user-img {
+    height: 240rpx;
+    width: 240rpx;
+    border-radius: 50%;
+    margin: 30rpx 30rpx;
+    border: #fff solid 5rpx;
+    overflow: hidden;
+  }
+  
+  .user-name {
+    font-size: 54rpx;
+  }
+  .user-class {
+      margin-top: 10rpx;
+  }
+  
+  .attendance-info {
+    height: 160rpx;
+    margin: 30rpx 30rpx;
+    border-radius: 20rpx;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 2px 8px 6px -6px #888;
+  }
+  
+  .money-bar-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .money-bar-item text:first-child {
+    font-weight: bold;
+    margin: 5rpx;
+  }
+  
+  .money-bar-item text:nth-child(2) {
+    color: #969799;
+  }
+
+  
+ 
+  
+
+
+  
+  .course-bar {
+    height: 100rpx;
+    margin: 0 30rpx 20rpx;
+    border-radius: 20rpx;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45rpx;
+    background-color: #fff;
+    box-shadow: 2px 8px 6px -6px #888;
+  }
+
+
+  
+  

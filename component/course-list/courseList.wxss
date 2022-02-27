@@ -1,0 +1,29 @@
+page {
+    background-color: #f2f3f5;
+  }
+.course-item {
+    height: 200rpx;
+    margin: 15rpx 30rpx;
+    border-radius: 25rpx;
+    padding: 30rpx;
+    background-color: #fff;
+    box-shadow: 2px 8px 6px -6px #888;
+}
+.course-name {
+    font-weight: bold;
+    height: 60%;
+    font-size: 54rpx;
+}
+.class-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.teacher-img {
+    height: 80rpx;
+    width: 80rpx;
+}
+.teacher-name {
+    line-height: 80rpx;
+    margin: 0 15rpx;
+}

@@ -10,7 +10,7 @@
     </view>
     <view class="phone">
         <text>密码</text>
-        <input model:value="{{passWord}}" placeholder="请输入密码"></input>
+        <input type="safe-password" model:value="{{passWord}}" placeholder="请输入密码"></input>
     </view>
 </view>
 <view class="footer">
