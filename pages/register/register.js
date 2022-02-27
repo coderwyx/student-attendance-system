@@ -1,4 +1,5 @@
 // pages/register/register.js
+import HTTP from '../../utils/requestFn/api'
 Page({
 
     /**
@@ -6,7 +7,8 @@ Page({
      */
     data: {
         studentId: '',
-        passWord: ''
+        passWord: '',
+        role: 'student'
     },
 
     /**
@@ -64,5 +66,22 @@ Page({
     onShareAppMessage: function () {
 
     },
-    // login()
+    login() {
+        const loginInfo = {
+            identity: this.data.role,
+            accountNumber: this.data.studentId,
+            password: this.data.passWord
+        }
+        HTTP.loginApi(loginInfo).then(res => {
+            console.log(res)
+        }).catch(err => {
+            console.log(err)
+        })
+    },
+    fakeCallBack(){},
+    onChange(event) {
+        this.setData({
+            role: event.detail,
+        });
+    },
 })

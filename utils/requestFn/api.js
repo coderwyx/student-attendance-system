@@ -13,7 +13,7 @@ const HTTP = {
     // 登录口
     loginApi(params) {
         return requestFn.Request({
-            url: `/wx/user/${appid}/auth?nickName=${params.nickName}&openid=${params.openid}`,
+            url: `/user/sign`,
             data: params
         })
     },

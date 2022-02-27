@@ -1,16 +1,23 @@
+<van-notice-bar left-icon="volume-o" text="欢迎使用考勤小程序,希望大家好好学习，天天向上，祝大家新年快乐！！！" />
 <view class="header">
     <image src="/img/logo.png"></image>
     <text style="font-weight:bold;font-size:40rpx">欢迎登录</text>
     <text>学生考勤小程序</text>
 </view>
+<view class="role">
+    <van-radio-group value="{{ role }}" bind:change="onChange" direction="horizontal">
+        <van-radio style="margin: 0 30rpx;" name="student">我是学生</van-radio>
+        <van-radio style="margin: 0 30rpx;" name="teacher">我是老师</van-radio>
+    </van-radio-group>
+</view>
 <view class="bodyer">
     <view class="phone">
-        <text>学号</text>
-        <input model:value="{{studentId}}" placeholder="请输入学号"></input>
+        <text>{{role==='student'?'学号':'教师账号'}}</text>
+        <input model:value="{{studentId}}"  bindinput="fakeCallBack" placeholder="{{role==='student'?'请输入学号':'请输入教师账号'}}"></input>
     </view>
     <view class="phone">
         <text>密码</text>
-        <input type="safe-password" model:value="{{passWord}}" placeholder="请输入密码"></input>
+        <input type="password" model:value="{{passWord}}" bindinput="fakeCallBack" placeholder="请输入密码"></input>
     </view>
 </view>
 <view class="footer">
